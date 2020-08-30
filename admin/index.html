@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Admin - Helios - Guia de ajuda</title>
+        <title>Administrador - Helios - Guia de ajuda</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -43,7 +43,7 @@
                                 <a href="../trustee/" class="nav-link">Trustee</a>
                             </li>
                             <li class="navitem active">
-                                <a href="./" class="nav-link">Admin</a>
+                                <a href="./" class="nav-link">Administrador</a>
                             </li>
                         </ul>
 
@@ -95,7 +95,27 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#adicionar-administrador-de-eleicao" class="nav-link">Adicionar administrador de eleição</a>
+            <li class="nav-item" data-level="2"><a href="#consultar-as-suas-eleicoes" class="nav-link">Consultar as suas Eleições</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#proximo-passo" class="nav-link">Próximo Passo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#prolongar-a-eleicao" class="nav-link">Prolongar a Eleição</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#enviar-emails" class="nav-link">Enviar Emails</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#estatisticas" class="nav-link">Estatísticas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#adicionar-administrador-de-eleicao" class="nav-link">Adicionar Administrador de Eleição</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -106,11 +126,204 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="administrador">Administrador</h1>
-<h2 id="criar-eleicao">Criar Eleição</h2>
-<h2 id="iniciar-eleicao">Iniciar Eleição</h2>
-<h2 id="terminar-eleicao">Terminar Eleição</h2>
-<h2 id="adicionar-administrador-de-eleicao">Adicionar administrador de eleição</h2></div>
+<h1 id="administrador">Administrador<a class="headerlink" href="#administrador" title="Permanent link">&para;</a></h1>
+<p><br/></p>
+<h2 id="criar-eleicao">Criar Eleição<a class="headerlink" href="#criar-eleicao" title="Permanent link">&para;</a></h2>
+<p>Se tiver permissões para criar uma eleição, será visível um balão azul no canto superior direito da página principal.</p>
+<ul>
+<li>Clique em <em>Create a New Election</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/1.png" /></p>
+<ul>
+<li>Preencha o formulário.<ul>
+<li>Short name (Obrigatório) - Nome que constará no URL da eleição</li>
+<li>Name (Obrigatório) - Nome da eleição</li>
+<li>Description - Descrição da eleição</li>
+<li>Institution (Obrigatório) - Instituição a ser associada à eleição</li>
+<li>Use voter aliases - As identidades dos eleitores serão substituídas por pseudónimos</li>
+<li>Use advanced audit features - Permite aos eleitores auditarem os votos. Mais informação <a href="../eleitor/#votos-auditados">aqui</a></li>
+<li>Randomize answer order - Torna a ordem das respostas às questões da eleição aleatória</li>
+<li>Private? - Apenas utilizadores registados na eleição conseguem aceder a esta</li>
+<li>Help Email Address - Endereço de e-mail a ser contactado pelos eleitores em caso de ajuda</li>
+<li>Election Info Download URL - Link com mais informação acerca da eleição</li>
+<li>Voting starts at - Data e hora do começo da eleição</li>
+<li>Voting ends at - Data e hora do final da eleição</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/2.png" /></p>
+<p>Esta é a página de eleição. </p>
+<ul>
+<li>Na coluna da esquerda encontra-se informação acessível ao utilizador comum.</li>
+<li>Na coluna da direita encontra-se o painel do administrador que o informa qual o <a href="./#proximo-passo">próximo passo</a> da eleição, e que também contém algumas ferramentas:<ul>
+<li>Edit - Permite editar o formulário de eleição preenchido anteriormente.</li>
+<li>Archive it - Arquiva a eleição, deixando esta de ser acessível exceptuando a quem tenha o link desta e aos administradores. Pode sempre desarquivar a eleição.</li>
+<li>Copy - Cria uma cópia da eleição com os mesmos dados inseridos no formulário anterior.</li>
+</ul>
+</li>
+<li>Na parte inferior da página pode-se encontrar mais informação útil, como o <a href="../eleitor/#codigo-de-eleicao">Código de Eleição</a>, o <a href="../eleitor/#rastreador-de-voto">Rastreador de Voto</a> e o <a href="../eleitor/#centro-de-rastreamento">Centro de Rastreamento</a>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/3.png" /></p>
+<ul>
+<li>Existem 3 coisas a fazer antes de iniciar a eleição:<ul>
+<li><a href="./#adicionar-questoes">Adicionar questões</a></li>
+<li><a href="./#definir-eleitores">Definir eleitores</a></li>
+<li><a href="./#adicionar-trustees">Adicionar trustees</a></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/3.5.png" /></p>
+<p><br/></p>
+<h4 id="adicionar-questoes">Adicionar Questões<a class="headerlink" href="#adicionar-questoes" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Adicione uma questão a ser perguntada aos eleitores, juntamente com as respostas a esta. Pode especificar o número mínimo e máximo de respostas que o eleitor pode seleccionar. Pode também associar um link a cada resposta com mais informação acerca desta. Quando tiver a questão e as respostas devidamente preenchidas, <em>adicione a questão</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/4.png" /></p>
+<ul>
+<li>Pode adicionar o número de questões que quiser. Todas as questões e respectivas respostas podem ser consultadas, editadas ou removidas no topo da página.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/5.png" /></p>
+<p><br/></p>
+<h4 id="definir-eleitores">Definir Eleitores<a class="headerlink" href="#definir-eleitores" title="Permanent link">&para;</a></h4>
+<p>Existem 3 opções para definir quem é que pode participar na eleição.</p>
+<p><img alt="Screenshot" src="../img/Admin/6.png" /></p>
+<ul>
+<li>Qualquer utilizador - Qualquer utilizador que se consiga autenticar pode votar.</li>
+<li>Apenas eleitores específicos - É carregada uma lista de eleitores, e apenas estes podem votar.<ul>
+<li>Seleccione a opção <em>only voters listed explicitly below can vote</em> e carregue em <em>update</em>.</li>
+<li>Carregue em <em>bulk upload voters</em>.</li>
+<li>Aqui pode carregar a lista de eleitores. Esta lista deverá ser um ficheiro no seu computador, contendo em cada linha o ID, e-mail e Nome de cada eleitor, separados por vírgulas conforme no exemplo, e sem linhas em branco. Caso o ficheiro esteja incorrectamente formatado, poderá não ser possível carregá-lo ou poderá ser carregado incorretamente. Para carregar a lista, clique em <em>Explorar...</em>, seleccione o ficheiro com a lista de eleitores, e carregue em <em>go</em>.</li>
+<li>Antes de carregar a lista pode verificar as primeiras entradas desta para detetar algo de errado. Se tudo parecer bem, carregue em <em>Yes</em>. Caso queira alterar a lista, clique em <em>No</em>. Caso queira cancelar, clique em <em>Back to Election</em>.</li>
+<li>Após confirmar, encontrará a lista dos eleitores debaixo das 3 opções. Nota: Esta lista poderá demorar algum tempo a carregar. Espere alguns minutos e atualize a página. Se na parte inferior da página <em>Prior Bulk Uploads</em> continuar a aparecer uma mensagem de <em>loading</em>. tente de novo carregar a lista ou contacte o administrador.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/7.png" /></p>
+<p><img alt="Screenshot" src="../img/Admin/8.png" /></p>
+<ul>
+<li>Membros com determinados atributos - Apenas membros com atributos específicos podem votar.</li>
+</ul>
+<p><br/></p>
+<h4 id="adicionar-trustees">Adicionar Trustees<a class="headerlink" href="#adicionar-trustees" title="Permanent link">&para;</a></h4>
+<p>Por definição todas as eleições começam com um trustee - o sistema Helios. Para tornar a sua eleição mais segura, é aconselhável adicionar também trustees humanos. As eleições só poderão ser abertas quando todos os trustees enviarem a sua chave pública para o servidor. Do mesmo modo, os resultados da eleição só poderão ser calculados quando todos os trustees enviarem a sua desencriptação parcial.</p>
+<ul>
+<li>Clique em <em>add a trustee</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/10.png" /></p>
+<ul>
+<li>Dê um nome ao trustee e digite o seu e-mail. De seguida, <em>adicione-o</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/11.png" /></p>
+<ul>
+<li>Aparecerá uma nova entrada na tabela com o novo trustee. Agora o trustee terá de carregar a sua chave pública para o servidor. Para isso, envie-lhe um e-mail carregando no icon de envelope ao lado do seu endereço electrónico.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/12.png" /></p>
+<p><br/></p>
+<h2 id="iniciar-eleicao">Iniciar Eleição<a class="headerlink" href="#iniciar-eleicao" title="Permanent link">&para;</a></h2>
+<p>Para iniciar uma eleição, terá de lhe aparecer o passo <em>Freeze the Ballot and open Election</em>. Caso contrário, efetue os passos indicados primeiro, como descrito em <a href="./#criar-eleicao">Criar Eleição</a>. Após abrir uma eleição, não será mais possível editá-la. A votação abrirá ao tempo estipulado de abertura, ou no caso de não haver um tempo estipulado, abrirá imediatamente. Pode também prever a cabine eleitoral em <em>Preview Booth</em>.</p>
+<ul>
+<li>Clique em <em>Freeze the Ballot and open Election</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/14.png" /></p>
+<ul>
+<li>Clique em <em>Freeze the ballot</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/15.png" /></p>
+<ul>
+<li>A eleição está iniciada. Caso tenha carregado uma lista de eleitores, não se esqueça de enviar e-mail aos eleitores com as suas credenciais de voto, como descrito em <a href="./#enviar-emails">Enviar Emails</a>.</li>
+</ul>
+<p><br/></p>
+<h2 id="terminar-eleicao">Terminar Eleição<a class="headerlink" href="#terminar-eleicao" title="Permanent link">&para;</a></h2>
+<p>Para terminar uma eleição, terá de se calcular a contagem, desencriptá-la e contar os votos.  Não será possível a nenhum eleitor votar ou alterar o seu voto após isto.</p>
+<ul>
+<li>Clique em <em>Compute encrypted tally</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/AdminEnd/1.png" /></p>
+<ul>
+<li>Clique em <em>compute encrypted tally!</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/AdminEnd/2.png" /></p>
+<ul>
+<li>Se tiver adicionado trustees à eleição, é necessário que eles enviem as suas desencriptações parciais. Envie-lhes um e-mail a informar conforme descrito em <a href="./#adicionar-trustees">Adicionar Trustees</a>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/AdminEnd/3.png" /></p>
+<ul>
+<li>Após os trustees terem enviado as suas desencriptações, clique em <em>Compute Results</em> ou <em>Combine trustee decryptions and compute results</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/AdminEnd/5.png" /></p>
+<ul>
+<li>Clique em <em>compute the tally!</em></li>
+</ul>
+<p><img alt="Screenshot" src="../img/AdminEnd/6.png" /></p>
+<ul>
+<li>Aqui poderá ver o resultado da eleição. Contudo, o público ainda não o consegue ver. Para o disponibilizar ao público, clique em <em>Release result</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/AdminEnd/7.png" /></p>
+<ul>
+<li>Seleccione a caixinha caso queira enviar e-mail aos eleitores acerca do resultado da eleição, e clique em <em>release result!</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/AdminEnd/8.png" /></p>
+<ul>
+<li>A eleição terminou. Pode verificar a contagem dos votos como explicado em <a href="../eleitor/#verificar-contagem">Verificar Contagem</a>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/AdminEnd/9.png" /></p>
+<p><br/></p>
+<h2 id="consultar-as-suas-eleicoes">Consultar as suas Eleições<a class="headerlink" href="#consultar-as-suas-eleicoes" title="Permanent link">&para;</a></h2>
+<p>As suas eleições podem ser consultadas na página principal, do lado direito.</p>
+<p><img alt="Screenshot" src="../img/Admin/elections.png" /></p>
+<p><br/></p>
+<h2 id="proximo-passo">Próximo Passo<a class="headerlink" href="#proximo-passo" title="Permanent link">&para;</a></h2>
+<p>Durante o decorrer da eleição, aparecerão vários passos para o guiar no seu painel de administrador.</p>
+<ul>
+<li><em>Add questions to the Ballot</em> - Adicionar questões a serem perguntadas aos eleitores</li>
+<li><em>Add at least one Trustee</em> - Adicionar pelo menos 1 trustee à eleição</li>
+<li><em>Have Trustee generate a Keypair</em> - É necessário a geração do par de chaves por um dos trustees. Caso ainda não o tenha feito, envie-lhe um e-mail como descrito em <a href="./#adicionar-trustees">Adicionar Trustees</a>.</li>
+<li><em>Enter your Voter List</em> - Adicione uma lista de eleitores, ou mude a opção de quem pode participar na eleição em <a href="./#definir-eleitores">Definir Eleitores</a>.</li>
+<li><em>Freeze the Ballot and open Election</em> - Abrir a eleição. Não será mais possível editá-la após isto. A votação abrirá ao tempo estipulado de abertura, ou no caso de não haver um tempo estipulado, abrirá imediatamente.</li>
+<li><em>Compute encrypted tally</em> - Terminar a fase de votação e passar à contagem dos votos. Não será possível a nenhum eleitor votar ou alterar o seu voto.</li>
+<li><em>Tally computation is under way. Reload this page in a couple of minutes.</em> - Aguarde uns minutos enquanto a contagem é obtida.</li>
+<li><em>Trustees (for decryption)</em> - É necessário o envio das desencriptações parciais dos trustees. Envie-lhes um e-mail a informar conforme descrito em <a href="./#adicionar-trustees">Adicionar Trustees</a>.</li>
+<li><em>Compute results</em> ou <em>Combine trustee decryptions and compute results</em> - Obter a contagem dos votos, sem a disponibilizar ao público.</li>
+<li><em>Release result</em> - Lançar o resultado ao público. </li>
+<li><em>The election is over. Nothing more to do.</em> - Eleição terminada.</li>
+</ul>
+<p><br/> </p>
+<h2 id="prolongar-a-eleicao">Prolongar a Eleição<a class="headerlink" href="#prolongar-a-eleicao" title="Permanent link">&para;</a></h2>
+<p>Pode prolongar a eleição no menu <em>Election scheduling info</em>, carregando em <em>Extend voting</em>.</p>
+<p><img alt="Screenshot" src="../img/Admin/time.png" /></p>
+<p><br/></p>
+<h2 id="enviar-emails">Enviar Emails<a class="headerlink" href="#enviar-emails" title="Permanent link">&para;</a></h2>
+<p>Se desejar enviar um e-mail a um trustee, siga os passos em <a href="./#adicionar-trustees">Adicionar Trustees</a>. Caso queira enviar e-mail a eleitores, siga os passos abaixo.</p>
+<ul>
+<li>Na página da eleição, carregue em <em>Voters &amp; Casted Ballots</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/3.5.png" /></p>
+<ul>
+<li>Pode enviar um e-mail em massa carregando em <em>email voters</em>, ou um e-mail a apenas um eleitor, carregando no envelope ao lado do seu nome.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/email0.png" /></p>
+<ul>
+<li>Escolha um dos 4 <em>templates</em> de e-mail.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/email1.png" /></p>
+<ul>
+<li>Escreva o assunto do e-mail e adicione algum texto se quiser. Caso seja um e-mail enviado em massa, também pode escolher entre enviar o e-mail para todos os eleitores, para eleitores que já votaram ou para eleitores que ainda não votaram.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/email2.png" /></p>
+<p><br/></p>
+<h2 id="estatisticas">Estatísticas<a class="headerlink" href="#estatisticas" title="Permanent link">&para;</a></h2>
+<p>As estatísticas ainda têm de ser mexidas.</p>
+<p><br/></p>
+<h2 id="adicionar-administrador-de-eleicao">Adicionar Administrador de Eleição<a class="headerlink" href="#adicionar-administrador-de-eleicao" title="Permanent link">&para;</a></h2>
+<p>Se puder adicionar administradores de eleição, terá essa opção no canto superior direito da página principal.</p>
+<ul>
+<li>Clique em <em>Add an Election Admin</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/add1.png" /></p>
+<ul>
+<li>Escolha da lista o utilizador a quem devem ser dados esses privilégios, assim como a data a que estes expiram e carregue em <em>Submit</em>. Nota: se os privilégios expirarem a meio de uma eleição, estes terão de ser garantidos de novo para o administrador desta puder lançar os resultados.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Admin/add2.png" /></p></div>
             </div>
         </div>
 
