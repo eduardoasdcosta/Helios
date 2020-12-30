@@ -86,6 +86,10 @@
             
             <li class="nav-item" data-level="1"><a href="#trustee" class="nav-link">Trustee</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#aceder-a-pagina-de-trustee" class="nav-link">Aceder à Página de Trustee</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#gerar-par-de-chaves" class="nav-link">Gerar Par de Chaves</a>
               <ul class="nav flex-column">
               </ul>
@@ -106,73 +110,97 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="trustee">Trustee<a class="headerlink" href="#trustee" title="Permanent link">&para;</a></h1>
+<p><br/>
+Os trustees são responsáveis por garantir a correta apuração do resultado da eleição. Deve haver sempre pelo menos 2 trustees por eleição, para garantir a integridade do resultado desta.</p>
+<h2 id="aceder-a-pagina-de-trustee">Aceder à Página de Trustee<a class="headerlink" href="#aceder-a-pagina-de-trustee" title="Permanent link">&para;</a></h2>
+<p>Se for escolhido como trustee de uma eleição, o administrador desta deverá lhe enviar um e-mail com um link para aceder à página principal desta.</p>
+<ul>
+<li>Aceda à página da eleição, e depois entre na página de trustees da eleição (<em>Current Trustees</em>). </li>
+</ul>
+<p><img alt="Screenshot" src="../img/NovoEleitor/list1.png" /></p>
+<ul>
+<li>Clique em <em>Your Trustee Homepage</em>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/NovoTrustee/key1.png" /></p>
+<ul>
+<li>Esta é a sua página de trustee. Aqui poderá gerar o seu par de chaves, enviar a sua chave pública para o servidor, verificar a validez da sua chave secreta e desencriptar o resultado da eleição.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/NovoTrustee/key2.png" /></p>
 <p><br/></p>
 <h2 id="gerar-par-de-chaves">Gerar Par de Chaves<a class="headerlink" href="#gerar-par-de-chaves" title="Permanent link">&para;</a></h2>
-<p>Para gerar o par de chaves, aceda ao link que lhe foi enviado por e-mail pelo administrador de eleição. 
-<br/></p>
 <ul>
-<li>Clique em <em>setup your key</em>.</li>
+<li>Aceda à sua página de trustee e clique em <em>Setup Your Key</em>.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/1.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/key2.png" /></p>
 <ul>
-<li>Clique em <em>Generate Election Keys</em> para gerar o par de chaves (secreta e pública). Caso já tenha um par de chaves gerado, pode-o <em>reutilizar</em>.</li>
+<li>Clique em <em>Generate Election Keys</em> para gerar o par de chaves (secreta e pública). Caso já tenha um par de chaves gerado, pode-o reutilizar (<em>reuse it</em>).</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/2.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/key3.png" /></p>
 <ul>
-<li>O par de chaves foi gerado, clique em <em>Show my secret key</em> para visualizar a chave secreta. Também pode decidir apagar o par de chaves e gerar um novo.</li>
+<li>[Opcional] Se reutilizar um par de chaves, basta colar a chave secreta na caixa de texto e clicar em <em>Reuse</em> e de seguida em <em>Upload your public key</em>.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/3.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/key8.png" /></p>
 <ul>
-<li>Aqui pode ver a sua chave secreta. Copie-a ou faça <em>download</em> desta para um ficheiro e guarde-a num sítio seguro. NÂO PERCA A CHAVE SECRETA! Caso a perca, será IMPOSSÍVEL desencriptar o resultado da eleição.</li>
+<li>Caso tenha gerado o par de chaves, clique em <em>Show my secret key</em> para visualizar a chave secreta. </li>
+<li>Pode a qualquer momento recomeçar o processo de geração de chaves. Para tar basta clicar em <em>Start Over</em>.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/4.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/key4.png" /></p>
 <ul>
-<li>Após guardar a chave secreta pode dar <em>upload</em> desta para o servidor, de modo a tornar possível ao administrador iniciar a eleição. Para tal clique em <em>Upload your public key</em>. Também lhe é aqui mostrada a sua chave pública, de modo a que possa confirmar que a sua chave pública é corretamente guardada no servidor.</li>
+<li>Aqui pode ver a sua chave secreta. Faça <em>download</em> desta para um ficheiro (<em>Download Private Key to a File</em>) e guarde-o num ou mais sítios seguros. </li>
+<li>NÃO PERCA A CHAVE SECRETA! Caso a perca, será IMPOSSÍVEL desencriptar o resultado da eleição.</li>
+<li>Após guardar a chave secreta clique em <em>I have saved the key. Let's move on</em>.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/5.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/key5.png" /></p>
 <ul>
-<li>Após dar <em>upload</em> da sua chave pública, deverá guardar a sua chave secreta e o link recebido por e-mail inicialmente, para que lhe seja possível desencriptar o resultado da eleição.</li>
+<li>Após basta dar <em>upload</em> da chave pública para o servidor, de modo a tornar possível ao administrador iniciar a eleição. Para tal clique em <em>Upload your public key</em>.</li>
+<li>Também lhe é aqui mostrada a sua chave pública, de modo a que possa confirmar que a sua chave pública é corretamente guardada no servidor. Pode verificar tal na página de trustees da eleição.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/6.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/key6.png" /></p>
+<ul>
+<li>Após dar <em>upload</em> da sua chave pública, deverá guardar a sua chave secreta num local seguro para que seja possível desencriptar o resultado da eleição.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/NovoTrustee/key7.png" /></p>
 <p><br/></p>
 <h2 id="verificar-chave-secreta">Verificar Chave Secreta<a class="headerlink" href="#verificar-chave-secreta" title="Permanent link">&para;</a></h2>
 <p>Se o desejar, pode verificar a qualquer momento se a chave secreta que guardou é válida.</p>
 <ul>
-<li>Clique em <em>verify that you have the right secret key</em>.</li>
+<li>Clique em <em>Verify your secret key (optional)</em>.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/6.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/key7.png" /></p>
 <ul>
-<li>Cole a sua chave secreta e de seguida <em>verifique</em>.</li>
+<li>Cole a sua chave secreta na caixa de texto e de seguida clique em <em>Check</em>.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/7.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/verify1.png" /></p>
 <ul>
 <li>Se a sua chave secreta corresponder à sua chave pública, aparecerá a seguinte mensagem.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/8.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/verify2.png" /></p>
 <ul>
 <li>Caso contrário, aparecerá uma mensagem a informar que a chave é inválida. Tente de novo, e caso a mensagem persista contacte o administrador de eleição.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/9.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/verify3.png" /></p>
 <p><br/></p>
 <h2 id="desencriptar-resultado">Desencriptar Resultado<a class="headerlink" href="#desencriptar-resultado" title="Permanent link">&para;</a></h2>
-<p>Para desencriptar o resultado, aceda ao link que lhe foi enviado por e-mail pelo administrador de eleição. 
-<br/></p>
 <ul>
-<li>Clique em <em>decrypt with your key</em>.</li>
+<li>Após terminar o período de voto, aceda à sua página de trustee e clique em <em>Decrypt with your key</em>.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/10.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/decrypt1.png" /></p>
 <ul>
-<li>Cole a sua chave secreta para gerar os factores de desencriptação. Pode realizar este passo sem estar ligado à internet, se assim o preferir. Clique em <em>Generate partial decryption</em> para os gerar.</li>
+<li>Cole a sua chave secreta previamente guardada na caixa de texto para gerar os factores de desencriptação. </li>
+<li>Pode realizar este passo sem estar ligado à internet, se assim o preferir. </li>
+<li>Clique em <em>Generate partial decryption</em> para os gerar.</li>
+<li>Caso já tenha gerado os factores de desencriptação, clique em <em>Skip to the Second Step</em>.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/11.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/decrypt2.png" /></p>
 <ul>
-<li>Aparecerão no ecrã os seus factores de desencriptação. Pode enviá-los para o servidor carregando em <em>Upload decryption factors to server</em>. Caso tenha saltado o passo anterior, terá de colar primeiro os factores de desencriptação.</li>
+<li>Aparecerão numa nova caixa de texto os factores de desencriptação gerados. Pode enviá-los para o servidor carregando em <em>Upload decryption factors to server</em>. </li>
+<li>Caso tenha saltado o passo anterior, terá de colar primeiro os factores de desencriptação na caixa de texto.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/12.png" /></p>
+<p><img alt="Screenshot" src="../img/NovoTrustee/decrypt3.png" /></p>
 <ul>
 <li>Feito! O seu papel de trustee nesta eleição terminou.</li>
 </ul>
-<p><img alt="Screenshot" src="../img/Trustee/13.png" /></p></div>
+<p><img alt="Screenshot" src="../img/NovoTrustee/decrypt4.png" /></p></div>
             </div>
         </div>
 
