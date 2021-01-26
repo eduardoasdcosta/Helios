@@ -1,3 +1,3 @@
 # Helios
 
-Guia de Ajuda para o Sistema de voto electrónico da UL.
+Help Guide for UL's Electronic Voting System - available in GitHub Pages.
